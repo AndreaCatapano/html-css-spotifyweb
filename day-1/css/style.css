@@ -57,7 +57,7 @@ ul {
 }
 
 
-p-default{
+.p-default{
     padding: 1rem;
 }
 
@@ -66,6 +66,10 @@ p-default{
     WEB APPLICATION SECTIONS
  ************************************************/
 
+
+.web-application .column{
+    justify-content: space-between;
+}
 
 /* MENU */
 
@@ -98,18 +102,31 @@ p-default{
     gap: 0.5rem;
 }
 
-.section-menu {
+.section-menu, .users {
     align-items: center;
 }
 
 .small-img {
     color: #151922;
-    width: 24px;
+    width: 48px;
+    height: 48px;
+
 }
 
 .home {
     background-color: #151922;
     width: 85vw;
+}
+
+/* USERS SECTION */
+
+.users .row p{
+    color: white;
+}
+
+.users .background-grey{
+    background-color: #858585;
+    border-radius: 50%;
 }
 
 footer {
@@ -138,7 +155,7 @@ footer {
     /* SECTION */
 
 
-    .section-menu {
+    .section-menu, .users {
         align-items: start;
     }
 
@@ -160,6 +177,7 @@ footer {
 
     #playlist  a{
         font-size: 0.75rem;
+        letter-spacing: 2px;
     }
 
     #playlist p {
