@@ -50,16 +50,31 @@ img {
  }
 
 
+ .display-n {
+    display: none;
+ }
+
 /************************************************
     WEB APPLICATION SECTIONS
  ************************************************/
 
+
+ /* MENU */
 
  .menu{
     background-color: black;
     width: 15vw;
  }
 
+/* LOGO */
+
+ .logo-image{
+    padding: 1rem;
+ }
+
+#logo-small{
+    display: block;
+}
 
  .home{
     background-color: #151922;
@@ -69,4 +84,22 @@ img {
  footer{
     background-color: #282828;
     height: 90px;
+ }
+
+
+ /************************************************
+      RESPONSIVE
+ ************************************************/
+
+
+ @media screen and (min-width: 992px) {
+
+    /* LOGO */
+    
+    #logo-small{
+        display: none;
+    }
+    #logo-big{
+        display: block;
+    }
  }
