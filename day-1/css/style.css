@@ -36,9 +36,6 @@ ul{
 }
 
 
-img {
-    max-width: 100%;
-}
 
 /************************************************
     UTILITIES
@@ -49,10 +46,16 @@ img {
     display: flex;
  }
 
+ .column{
+    display: flex;
+    flex-direction: column;
+ }
+
 
  .display-n {
     display: none;
  }
+
 
 /************************************************
     WEB APPLICATION SECTIONS
@@ -66,6 +69,11 @@ img {
     width: 15vw;
  }
 
+ .menu a{
+    color: #858585;
+    text-decoration: none;
+ }
+
 /* LOGO */
 
  .logo-image{
@@ -75,6 +83,24 @@ img {
 #logo-small{
     display: block;
 }
+
+/* SECTION */
+
+.menu-link{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-menu{
+    align-items: center;
+}
+
+.small-img{
+    color: #151922;
+    width: 24px;
+ }
 
  .home{
     background-color: #151922;
@@ -95,11 +121,22 @@ img {
  @media screen and (min-width: 992px) {
 
     /* LOGO */
-    
+
     #logo-small{
         display: none;
     }
     #logo-big{
         display: block;
+    }
+
+    /* SECTION */
+
+
+    .section-menu{
+        align-items: start;
+    }
+
+    a .display-n{
+        display: inline;
     }
  }
