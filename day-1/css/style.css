@@ -3,16 +3,16 @@
  *************************************************/
 
 
- body{
+body {
     height: 100vh;
- }
+}
 
- .web-application{
+.web-application {
     height: calc(100% - 90px);
- }
+}
 
 
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,7 +31,7 @@ a {
 }
 
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -42,19 +42,24 @@ ul{
  ************************************************/
 
 
- .row{
+.row {
     display: flex;
- }
+}
 
- .column{
+.column {
     display: flex;
     flex-direction: column;
- }
+}
 
 
- .display-n {
+.display-n {
     display: none;
- }
+}
+
+
+p-default{
+    padding: 1rem;
+}
 
 
 /************************************************
@@ -62,81 +67,120 @@ ul{
  ************************************************/
 
 
- /* MENU */
+/* MENU */
 
- .menu{
+.menu {
     background-color: black;
     width: 15vw;
- }
+}
 
- .menu a{
+.menu a {
     color: #858585;
     text-decoration: none;
- }
+}
 
 /* LOGO */
 
- .logo-image{
+.logo-image {
     padding: 1rem;
- }
+}
 
-#logo-small{
+#logo-small {
     display: block;
 }
 
 /* SECTION */
 
-.menu-link{
+.menu-link {
     padding: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.section-menu{
+.section-menu {
     align-items: center;
 }
 
-.small-img{
+.small-img {
     color: #151922;
     width: 24px;
- }
+}
 
- .home{
+.home {
     background-color: #151922;
     width: 85vw;
- }
+}
 
- footer{
+footer {
     background-color: #282828;
     height: 90px;
- }
+}
 
 
- /************************************************
+/************************************************
       RESPONSIVE
  ************************************************/
 
 
- @media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
 
     /* LOGO */
 
-    #logo-small{
+    #logo-small {
         display: none;
     }
-    #logo-big{
+
+    #logo-big {
         display: block;
     }
 
     /* SECTION */
 
 
-    .section-menu{
+    .section-menu {
         align-items: start;
     }
 
-    a .display-n{
+    a .display-n {
         display: inline;
     }
- }
+
+    /* PLAYLIST */
+
+    #playlist  p{
+        color: white;
+    }
+
+    #playlist  a, p, li{
+        padding: 1rem;
+        margin-bottom: 0.1rem;
+    }
+
+
+    #playlist  a{
+        font-size: 0.75rem;
+    }
+
+    #playlist p {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    #playlist .square{
+        padding: 0.5rem 0.75rem;
+        background-color:#858585;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    #playlist nav{
+        margin-top: 0.5rem;
+    }
+
+    .display-n{
+        display: block;
+    }
+
+}
