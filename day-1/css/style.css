@@ -150,12 +150,6 @@ footer {
     .column{
         align-items: start;
     }
-
-    .small-img{
-        max-width: 24px;
-    }
-
-
     /* LOGO */
 
     #logo-small {
@@ -195,7 +189,7 @@ footer {
 
 
     #playlist  a{
-        font-size: 0.75rem;
+        font-size: 0.6rem;
         letter-spacing: 2px;
     }
 
@@ -205,10 +199,10 @@ footer {
     }
 
     #playlist .square{
-        padding: 0.5rem 0.75rem;
+        padding: 0.25rem 0.4rem;
         background-color:#858585;
         color: black;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 700;
     }
 
