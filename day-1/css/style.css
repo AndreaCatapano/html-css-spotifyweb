@@ -54,6 +54,7 @@ ul {
 
 .small-img {
     width: 24px;
+    opacity: 0.5;
 }
 
 .display-n {
@@ -120,11 +121,20 @@ ul {
 
 #users  a{
     color: white;
+    width: 100%;
 }
 
 #users .background-grey{
     background-color: #858585;
     border-radius: 50%;
+    opacity: 1;
+}
+
+#users hr{
+    width: 90%; 
+    margin: 0.5rem auto;
+    border: none;
+    border-top: 1px solid #282828;
 }
 
 /* USERS SECTION */
@@ -184,7 +194,7 @@ footer {
     }
 
     #playlist  a, p{
-        padding: 0.3rem 1rem;
+        padding: 0.4rem 1rem;
     }
 
 
@@ -214,4 +224,10 @@ footer {
         display: block;
     }
 
+}
+
+@media screen and (min-width: 1200px) {
+    #playlist  a{
+        font-size: 0.9rem;
+    }
 }
