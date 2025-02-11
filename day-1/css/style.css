@@ -104,6 +104,11 @@ ul {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    border-left: 2px solid transparent ;
+}
+
+.menu-link:hover{
+    border-left: 2px solid #B1F940 ;
 }
 
 .home {
@@ -120,6 +125,13 @@ ul {
 #users .background-grey{
     background-color: #858585;
     border-radius: 50%;
+}
+
+/* USERS SECTION */
+
+header{
+    height: 90px;
+    background-color: #10151B;
 }
 
 footer {
