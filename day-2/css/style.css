@@ -239,14 +239,19 @@ header button {
     text-align: center;
 }
 
-#create-for > h2{
+#create-for > h2, #popular-artist > h2{
     padding: 1rem 1.5rem 0.3rem;
 }
 
-#create-for > p{
+#create-for > p,  #popular-artist > p{
     font-size: 0.8rem;
     color: #7D7F84;
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+#popular-artist img{
+    border-radius: 50%;
+    margin-top: 1rem;
 }
 /************************************************
      FOOTER
@@ -355,6 +360,12 @@ footer {
 
 
 @media screen and (min-width: 992px) {
+    .item{
+        width: calc(20% - 1rem);
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .item{
         width: calc(16.66% - 1rem);
     }
