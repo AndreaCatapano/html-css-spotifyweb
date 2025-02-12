@@ -66,17 +66,21 @@ ul {
  ************************************************/
 
 .web-application .menu {
-    height: 100%;
     overflow-y: auto;
+    flex-shrink: 0;
 }
 
 /* MENU */
 
 .menu {
     background-color: black;
-    width: 15vw;
     align-items: center;
     justify-content: space-between;
+}
+
+.home {
+    background-color: #151922;
+    flex-grow: 1;
 }
 
 .menu a {
@@ -89,11 +93,14 @@ ul {
 .logo-image {
     padding: 1rem;
     width: 100%;
+    max-height: 90px;
 }
 
 #logo-small {
     display: block;
 }
+
+
 
 /* SECTION */
 
@@ -110,11 +117,6 @@ ul {
 
 .menu-link:hover{
     border-left: 2px solid #B1F940 ;
-}
-
-.home {
-    background-color: #151922;
-    width: 85vw;
 }
 
 /* USERS SECTION */
@@ -156,6 +158,10 @@ footer {
 
 
 @media screen and (min-width: 992px) {
+
+    .menu{
+        width: 230px;
+    }
 
     .column{
         align-items: start;
@@ -199,7 +205,7 @@ footer {
 
 
     #playlist  a{
-        font-size: 0.6rem;
+        font-size: 1rem;
         letter-spacing: 2px;
     }
 
@@ -224,10 +230,4 @@ footer {
         display: block;
     }
 
-}
-
-@media screen and (min-width: 1200px) {
-    #playlist  a{
-        font-size: 0.9rem;
-    }
 }
