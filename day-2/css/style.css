@@ -76,6 +76,7 @@ ul {
     background-color: black;
     align-items: center;
     justify-content: space-between;
+    width: 50px;
 }
 
 
@@ -103,7 +104,7 @@ ul {
 }
 
 .menu-link {
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 0;
     display: flex;
     align-items: center;
     border-left: 2px solid transparent ;
@@ -116,7 +117,7 @@ ul {
 /* USERS SECTION */
 
 #users{
-    padding: 0.85rem;
+    padding: 0.4rem 0.2;
 }
 #users a .menu-link{
     color: white;
@@ -146,8 +147,26 @@ ul {
 }
 
 header{
-    height: 90px;
     background-color: #10151B;
+    opacity: 0.7;
+    position: sticky;
+    top: 0;
+}
+
+header > .row{
+    padding: 1.5rem 1rem;
+    flex-direction: row-reverse;
+}
+
+header button{
+    align-self: center;
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    border: 1px solid white;
+    border-radius: 99em;
+    width: 230px;
 }
 
  /************************************************
@@ -185,6 +204,9 @@ header{
 
     /* SECTION */
 
+    .menu-link {
+        padding: 1rem;
+    }
 
     .section-menu, .users {
         align-items: start;
