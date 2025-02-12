@@ -1,0 +1,233 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+
+
+body {
+    height: 100vh;
+}
+
+.web-application {
+    height: calc(100% - 90px);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+li,
+p,
+a {
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+
+/************************************************
+    UTILITIES
+ ************************************************/
+
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-img {
+    width: 24px;
+    opacity: 0.5;
+}
+
+.display-n {
+    display: none;
+}
+
+/************************************************
+    WEB APPLICATION SECTIONS
+ ************************************************/
+
+.web-application .menu {
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+/* MENU */
+
+.menu {
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home {
+    background-color: #151922;
+    flex-grow: 1;
+}
+
+.menu a {
+    color: #858585;
+    text-decoration: none;
+}
+
+/* LOGO */
+
+.logo-image {
+    padding: 1rem;
+    width: 100%;
+    max-height: 90px;
+}
+
+#logo-small {
+    display: block;
+}
+
+
+
+/* SECTION */
+
+#menu-section{
+    margin-bottom: 1rem;
+}
+.menu-link {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-left: 2px solid transparent ;
+}
+
+.menu-link:hover{
+    border-left: 2px solid #B1F940 ;
+}
+
+/* USERS SECTION */
+
+#users  a{
+    color: white;
+    width: 100%;
+}
+
+#users .background-grey{
+    background-color: #858585;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#users hr{
+    width: 90%; 
+    margin: 0.5rem auto;
+    border: none;
+    border-top: 1px solid #282828;
+}
+
+/* USERS SECTION */
+
+header{
+    height: 90px;
+    background-color: #10151B;
+}
+
+footer {
+    background-color: #282828;
+    height: 90px;
+}
+
+
+/************************************************
+      RESPONSIVE
+ ************************************************/
+
+
+@media screen and (min-width: 992px) {
+
+    .menu{
+        width: 230px;
+    }
+
+    .column{
+        align-items: start;
+    }
+    /* LOGO */
+
+    #logo-small {
+        display: none;
+    }
+
+    #logo-big {
+        display: block;
+    }
+
+    /* SECTION */
+
+
+    .section-menu, .users {
+        align-items: start;
+    }
+
+    a .display-n {
+        display: inline;
+    }
+
+    /* PLAYLIST */
+
+    #playlist > .column{
+        justify-content: space-around;
+    }
+
+
+    #playlist  p{
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    #playlist  a, p{
+        padding: 0.4rem 1rem;
+    }
+
+
+    #playlist  a{
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    #playlist p {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    #playlist .square{
+        padding: 0.25rem 0.4rem;
+        background-color:#858585;
+        color: black;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #playlist nav{
+        margin-top: 1rem;
+    }
+
+    .display-n{
+        display: block;
+    }
+
+}
