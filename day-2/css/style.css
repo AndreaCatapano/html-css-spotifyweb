@@ -33,7 +33,7 @@ a {
 
 
 h2{
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     color: white;
     font-size: 1.5rem;
 }
@@ -214,9 +214,24 @@ header button {
     opacity: 1;
 }
 
+/* Item*/
+
+.item{
+    width: calc(50% - 1rem);
+}
+
+.item > img{
+    max-width: 100%
+}
+
+.item > p{
+    color: #7D7F84;
+    font-weight: 600;
+}
+
 /* Recently Played */
 
-#recently-played .row{
+#recently-played .row, #create-for .row{
     padding: 1rem 1.5rem;
     flex-wrap: wrap;
     gap: 1rem;
@@ -224,19 +239,15 @@ header button {
     text-align: center;
 }
 
-#recently-played .item{
-    width: calc(50% - 1rem);
+#create-for > h2{
+    padding: 1rem 1.5rem 0.3rem;
 }
 
-#recently-played img{
-    max-width: 100%;
+#create-for > p{
+    font-size: 0.8rem;
+    color: #7D7F84;
+    padding: 0.5rem 1.5rem;
 }
-
-#recently-played p{
- color: #7D7F84;
- font-weight: 600;
-}
-
 /************************************************
      FOOTER
  ************************************************/
@@ -337,14 +348,14 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    #recently-played .item{
+    .item{
         width: calc(25% - 1rem);
     }
 }
 
 
 @media screen and (min-width: 992px) {
-    #recently-played .item{
+    .item{
         width: calc(16.66% - 1rem);
     }
 }
