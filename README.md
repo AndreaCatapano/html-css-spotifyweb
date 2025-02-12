@@ -14,9 +14,10 @@ https://www.w3schools.com/cssref/css3_pr_overflow-y.php
 
 
 Day2 
-Mobile First with 4 breakpoints: 
+Mobile First with 5 breakpoints: 
 -X Small (<576px)
 -Small (≥576px)
+-Medium (≥768px)
 -Large (≥992px)
 -XLarge (≥1200px)
 
