@@ -62,7 +62,7 @@ ul {
 }
 
 /************************************************
-    WEB APPLICATION SECTIONS
+     MENU
  ************************************************/
 
 .web-application .menu {
@@ -78,10 +78,6 @@ ul {
     justify-content: space-between;
 }
 
-.home {
-    background-color: #151922;
-    flex-grow: 1;
-}
 
 .menu a {
     color: #858585;
@@ -100,18 +96,16 @@ ul {
     display: block;
 }
 
-
-
 /* SECTION */
 
 #menu-section{
     margin-bottom: 1rem;
 }
+
 .menu-link {
-    padding: 1rem;
+    padding: 0.4rem 1rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     border-left: 2px solid transparent ;
 }
 
@@ -121,43 +115,56 @@ ul {
 
 /* USERS SECTION */
 
-#users  a{
+#users{
+    padding: 0.85rem;
+}
+#users a .menu-link{
     color: white;
-    width: 100%;
+    padding: 0.8rem 0;
 }
 
 #users .background-grey{
     background-color: #858585;
     border-radius: 50%;
     opacity: 1;
+    margin-right: 0.3rem;
 }
 
 #users hr{
-    width: 90%; 
-    margin: 0.5rem auto;
     border: none;
-    border-top: 1px solid #282828;
+    border-top: 1px solid white;
 }
 
-/* USERS SECTION */
+
+/************************************************
+     HOME
+ ************************************************/
+
+ .home {
+    background-color: #151922;
+    flex-grow: 1;
+}
 
 header{
     height: 90px;
     background-color: #10151B;
 }
 
-footer {
+ /************************************************
+     FOOTER
+ ************************************************/
+
+ footer {
     background-color: #282828;
     height: 90px;
 }
-
 
 /************************************************
       RESPONSIVE
  ************************************************/
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
 
     .menu{
         width: 230px;
