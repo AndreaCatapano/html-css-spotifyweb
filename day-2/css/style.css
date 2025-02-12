@@ -31,6 +31,18 @@ a {
 }
 
 
+
+h2{
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+h4{
+    padding: 1rem;
+    color: white;
+}
+
 ul {
     list-style: none;
 }
@@ -99,7 +111,7 @@ ul {
 
 /* SECTION */
 
-#menu-section{
+#menu-section {
     margin-bottom: 1rem;
 }
 
@@ -107,31 +119,32 @@ ul {
     padding: 0.4rem 0;
     display: flex;
     align-items: center;
-    border-left: 2px solid transparent ;
+    border-left: 2px solid transparent;
 }
 
-.menu-link:hover{
-    border-left: 2px solid #B1F940 ;
+.menu-link:hover {
+    border-left: 2px solid #B1F940;
 }
 
 /* USERS SECTION */
 
-#users{
+#users {
     padding: 0.4rem 0.2;
 }
-#users a .menu-link{
+
+#users a .menu-link {
     color: white;
     padding: 0.8rem 0;
 }
 
-#users .background-grey{
+#users .background-grey {
     background-color: #858585;
     border-radius: 50%;
     opacity: 1;
     margin-right: 0.3rem;
 }
 
-#users hr{
+#users hr {
     border: none;
     border-top: 1px solid white;
 }
@@ -141,27 +154,28 @@ ul {
      HOME
  ************************************************/
 
- .home {
+.home {
     background-color: #151922;
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 /* Header */
 
 
-header{
+header {
     background-color: #10151B;
     opacity: 0.7;
     position: sticky;
     top: 0;
 }
 
-header > .row{
+header>.row {
     padding: 1.5rem 1rem;
     flex-direction: row-reverse;
 }
 
-header button{
+header button {
     align-self: center;
     padding: 0.8rem 2rem;
     background-color: transparent;
@@ -175,36 +189,59 @@ header button{
 
 /* Main-nav */
 
-#main-nav .row{
+#main-nav .row {
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
     padding: 1.5rem;
 }
 
-#main-nav a{
+#main-nav a {
     color: #7D7F84;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-#main-nav .hr-nav{
+#main-nav .hr-nav {
     width: 35%;
     margin: 0 auto;
     opacity: 0;
     border: 1px solid #B1F940;
 }
 
-#main-nav div:hover .hr-nav{
+#main-nav div:hover .hr-nav {
     opacity: 1;
 }
 
- /************************************************
+/* Recently Played */
+
+#recently-played .row{
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    text-align: center;
+}
+
+#recently-played .item{
+    width: calc(50% - 1rem);
+}
+
+#recently-played img{
+    max-width: 100%;
+}
+
+#recently-played p{
+ color: #7D7F84;
+ font-weight: 600;
+}
+
+/************************************************
      FOOTER
  ************************************************/
 
- footer {
+footer {
     background-color: #282828;
     height: 90px;
 }
@@ -216,13 +253,14 @@ header button{
 
 @media screen and (min-width: 576px) {
 
-    .menu{
+    .menu {
         width: 230px;
     }
 
-    .column{
+    .column {
         align-items: start;
     }
+
     /* LOGO */
 
     #logo-small {
@@ -239,7 +277,8 @@ header button{
         padding: 1rem;
     }
 
-    .section-menu, .users {
+    .section-menu,
+    .users {
         align-items: start;
     }
 
@@ -249,22 +288,23 @@ header button{
 
     /* PLAYLIST */
 
-    #playlist > .column{
+    #playlist>.column {
         justify-content: space-around;
     }
 
 
-    #playlist  p{
+    #playlist p {
         color: white;
         margin-bottom: 1rem;
     }
 
-    #playlist  a, p{
+    #playlist a,
+    p {
         padding: 0.4rem 1rem;
     }
 
 
-    #playlist  a{
+    #playlist a {
         font-size: 1rem;
         letter-spacing: 2px;
     }
@@ -274,20 +314,37 @@ header button{
         font-weight: 600;
     }
 
-    #playlist .square{
+    #playlist .square {
         padding: 0.25rem 0.4rem;
-        background-color:#858585;
+        background-color: #858585;
         color: black;
         font-size: 1rem;
         font-weight: 700;
     }
 
-    #playlist nav{
+    #playlist nav {
         margin-top: 1rem;
     }
 
-    .display-n{
+    .display-n {
         display: block;
     }
 
+    .item{
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    #recently-played .item{
+        width: calc(25% - 1rem);
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    #recently-played .item{
+        width: calc(16.66% - 1rem);
+    }
 }
