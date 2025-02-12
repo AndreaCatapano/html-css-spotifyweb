@@ -220,6 +220,13 @@ header button {
     width: calc(50% - 1rem);
 }
 
+.item > h4{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .item > img{
     max-width: 100%
 }
@@ -227,11 +234,16 @@ header button {
 .item > p{
     color: #7D7F84;
     font-weight: 600;
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Recently Played */
 
-#recently-played .row, #create-for .row{
+#recently-played .row, #create-for .row, #popular-artist .row{
     padding: 1rem 1.5rem;
     flex-wrap: wrap;
     gap: 1rem;
