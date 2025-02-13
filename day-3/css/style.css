@@ -50,7 +50,7 @@ ul {
 }
 
 
-.large{
+.large {
     width: 70%;
 }
 
@@ -90,6 +90,10 @@ ul {
     height: 100%;
     background-color: #C1C1C1;
     border-radius: 99em;
+}
+
+.footer-gap{
+    gap: 0.5;
 }
 
 /************************************************
@@ -306,11 +310,13 @@ footer>.row {
     justify-content: space-between;
 }
 
-#audio-section, #player-section, #song-section{
+#audio-section,
+#player-section,
+#song-section {
     width: calc(33.33% - 1rem);
 }
 
-.footer-item{
+.footer-item {
     height: 90px;
     align-items: center;
 
@@ -327,17 +333,21 @@ footer>.row {
 }
 
 
-.song-container h5{
+.song-container h5 {
     color: white;
     font-size: 0.8rem;
 }
 
-.song-container sub{
+.song-container sub {
     font-size: 0.8rem;
 }
 
-#song-section img {
-    width: 25px;
+#song-img-container {
+    width: 45px;
+}
+
+#song-img-container img {
+    width: 100%;
 }
 
 #song-section .column {
@@ -348,37 +358,36 @@ footer>.row {
 
 .folder-container {
     flex-direction: column;
+
 }
 
 
 /* Player Section */
 
-#player-section > .column{
+#player-section>.column {
     justify-content: center;
     align-items: center;
-    gap: 0.4rem;
     color: white;
 }
 
 
-.player-container{
-    gap: 1rem;
+.player-container {
+    gap: 1.2rem;
     justify-content: center;
     align-items: center;
 }
 
-#play{
+#play {
     font-size: 2rem;
 }
 
-.timer-container{
+.timer-container {
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
 }
 
-.timer-container p{
+.timer-container p {
     font-size: 0.7rem;
     font-size: 700;
 }
@@ -386,7 +395,7 @@ footer>.row {
 /* Audio Section */
 
 
-#audio-section > .row{
+#audio-section>.row {
     align-items: center;
     justify-content: end;
     color: white;
@@ -397,11 +406,9 @@ footer>.row {
     max-width: 250px;
 }
 
-
-.audio-container{
-    gap: 0.2rem;
+.footer-item > .footer-gap{
+    gap: 0.4rem;
 }
-
 
 /************************************************
       RESPONSIVE
@@ -456,7 +463,7 @@ footer>.row {
     }
 
     #playlist a,
-    p {
+    #playlist p {
         padding: 0.4rem 1rem;
     }
 
@@ -491,6 +498,10 @@ footer>.row {
         align-items: center;
     }
 
+    .footer-gap {
+        gap: 1rem;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -500,6 +511,11 @@ footer>.row {
 
     .folder-container {
         flex-direction: row;
+        gap: 1rem;
+    }
+
+    .footer-gap {
+        gap: 1.5rem;
     }
 }
 
