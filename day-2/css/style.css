@@ -130,6 +130,7 @@ ul {
 
 #users {
     padding: 0.4rem 0.2;
+    align-self: center;
 }
 
 #users a .menu-link {
@@ -146,6 +147,7 @@ ul {
 
 #users hr {
     border: none;
+    margin: 0 auto;
     border-top: 1px solid white;
 }
 
@@ -225,6 +227,7 @@ header button {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 0.5rem;
 }
 
 .item > img{
@@ -234,7 +237,7 @@ header button {
 .item > p{
     color: #7D7F84;
     font-weight: 600;
-
+    padding: 0.5rem;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
