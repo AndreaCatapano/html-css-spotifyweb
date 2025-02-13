@@ -23,7 +23,9 @@ h1,
 h2,
 h3,
 h4,
+h5,
 li,
+sub,
 p,
 a {
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
@@ -32,13 +34,13 @@ a {
 
 
 
-h2{
+h2 {
     padding: 1rem 1.5rem;
     color: white;
     font-size: 1.5rem;
 }
 
-h4{
+h4 {
     padding: 1rem;
     color: white;
 }
@@ -46,6 +48,7 @@ h4{
 ul {
     list-style: none;
 }
+
 
 
 
@@ -218,11 +221,11 @@ header button {
 
 /* Item*/
 
-.item{
+.item {
     width: calc(50% - 1rem);
 }
 
-.item > h4{
+.item>h4 {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -230,11 +233,11 @@ header button {
     padding: 0.5rem;
 }
 
-.item > img{
+.item>img {
     max-width: 100%
 }
 
-.item > p{
+.item>p {
     color: #7D7F84;
     font-weight: 600;
     padding: 0.5rem;
@@ -246,7 +249,9 @@ header button {
 
 /* Recently Played */
 
-#recently-played .row, #create-for .row, #popular-artist .row{
+#recently-played .row,
+#create-for .row,
+#popular-artist .row {
     padding: 1rem 1.5rem;
     flex-wrap: wrap;
     gap: 1rem;
@@ -254,28 +259,70 @@ header button {
     text-align: center;
 }
 
-#create-for > h2, #popular-artist > h2{
+#create-for>h2,
+#popular-artist>h2 {
     padding: 1rem 1.5rem 0.3rem;
 }
 
-#create-for > p,  #popular-artist > p{
+#create-for>p,
+#popular-artist>p {
     font-size: 0.8rem;
     color: #7D7F84;
     padding: 1rem 1.5rem;
 }
 
-#popular-artist img{
+#popular-artist img {
     border-radius: 50%;
     margin-top: 1rem;
 }
+
 /************************************************
      FOOTER
  ************************************************/
 
 footer {
     background-color: #282828;
-    height: 90px;
 }
+
+footer>.row {
+    background-color: #282828;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+#song-section>.row {
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+
+    color: #7D7F84;
+}
+
+.song-container {
+    gap: 0.8rem;
+}
+
+
+.song-container h5{
+    color: white;
+}
+
+#song-section img {
+    width: 50px;
+}
+
+#song-section .column {
+    justify-content: center;
+    align-items: start;
+}
+
+
+.folder-container {
+    flex-direction: column;
+}
+
+
 
 /************************************************
       RESPONSIVE
@@ -361,27 +408,31 @@ footer {
         display: block;
     }
 
-    .item{
+    .item {
         align-items: center;
     }
 
 }
 
 @media screen and (min-width: 768px) {
-    .item{
+    .item {
         width: calc(25% - 1rem);
+    }
+
+    .folder-container {
+        flex-direction: row;
     }
 }
 
 
 @media screen and (min-width: 992px) {
-    .item{
+    .item {
         width: calc(20% - 1rem);
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .item{
+    .item {
         width: calc(16.66% - 1rem);
     }
 }
