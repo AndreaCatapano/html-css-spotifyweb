@@ -290,22 +290,27 @@ footer>.row {
     padding: 0 1rem;
 }
 
+/* Song Section */
+
 #song-section>.row {
-    gap: 1rem;
-    justify-content: space-between;
+    gap: 0.5rem;
     align-items: center;
     height: 90px;
-
     color: #7D7F84;
 }
 
 .song-container {
-    gap: 0.8rem;
+    gap: 0.4rem;
 }
 
 
 .song-container h5{
     color: white;
+    font-size: 0.8rem;
+}
+
+.song-container sub{
+    font-size: 0.8rem;
 }
 
 #song-section img {
@@ -322,7 +327,38 @@ footer>.row {
     flex-direction: column;
 }
 
+#song-section i {
+    font-size: 0.8rem;
+}
 
+/* Audio Section */
+
+#audio-section > .row{
+    padding: 1rem 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    gap: 0.5rem;
+    color: white;
+}
+
+.progress-container {
+    width: 80px;
+    height: 6px;
+    background-color: #5A5A5A;
+    border-radius: 99em;
+}
+
+.progress-bar {
+    width: 25%;
+    height: 100%;
+    background-color: #C1C1C1;
+    border-radius: 99em;
+}
+
+#audio-section i{
+    font-size: 0.8rem;
+}
 
 /************************************************
       RESPONSIVE
