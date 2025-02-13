@@ -196,10 +196,11 @@ ul {
 
 header {
     background-color: #10151B;
-    opacity: 0.7;
+    opacity: 0.8;
     position: sticky;
     top: 0;
     height: 90px;
+    z-index: 2;
 }
 
 header>.row {
@@ -260,6 +261,34 @@ header button:hover{
 
 .item {
     width: calc(50% - 1rem);
+    cursor: pointer;
+}
+
+.overlay{
+    position: relative;
+}
+
+.overlay::before {
+    content: '\f144';
+    font-family: 'Font Awesome 6 Free';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(128, 128, 128, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.overlay:hover::before {
+    opacity: 1;
 }
 
 .item>h4 {
@@ -270,8 +299,9 @@ header button:hover{
     padding: 0.5rem;
 }
 
-.item>img {
-    max-width: 100%
+.item img {
+    max-width: 100%;
+    display: block;
 }
 
 .item>p {
@@ -308,9 +338,12 @@ header button:hover{
     padding: 1rem 1.5rem;
 }
 
+ #popular-artist .overlay::before {
+    border-radius: 50%;
+}
+
 #popular-artist img {
     border-radius: 50%;
-    margin-top: 1rem;
 }
 
 /************************************************
